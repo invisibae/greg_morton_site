@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg Morton ebsite</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Bitter:ital,wght@0,100..900;1,100..900&family=Prata&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #575761;
+            color: #ffffff /* Tailwind's neutral-300 */
+        }
+
+        .font-prata {
+            font-family: 'Prata', serif;
+        }
+
+        .font-barlow {
+            font-family: 'Barlow Semi Condensed', 'sans-serif';
+        }
+
+    </style>
+</head>
+<body class="bg-slate-950 text-neutral-300 font-sans leading-relaxed tracking-wide flex flex-col min-h-screen dark:bg-slate-950 dark:text-gray-200" >
+    <!-- Navigation -->
+    <nav class="w-full bg-slate-950 dark:bg-slate-950 border-b border-neutral-300 dark:border-gray-700 py-4 font-prata">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-xl font-semibold">Greg Morton Web.site</h1>
+            <ul class="flex space-x-6 items-center">
+                <li><a href="#" class="text-gray-300 dark:text-neutral-300 hover:text-gray-100 dark:hover:text-white">Resume</a></li>
+                <li><a href="#" class="text-gray-300 dark:text-neutral-300 hover:text-gray-100 dark:hover:text-white">Clips</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-2 py-4">
+        <section class="text-center font-prata">
+            <h2 class="text-2xl font-semibold mb-4">Selected Work</h2>
+            <p class="text-md text-neutral-300 mb-8">A small sample of favorite recent stories of mine.</p>
+            <!-- <a href="#" class="bg-gray-700 dark:bg-gray-600 text-white py-2 px-4 rounded-md hover:bg-gray-600 dark:hover:bg-gray-500">View My Resume</a> -->
+        </section>
+        
+        <!-- Clips Section -->
+        <section class="mt-8">
+            <!-- <h3 class="text-xl font-semibold mb-6">Journalism Clips</h3> -->
+            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Example Clip -->
+                <article class="bg-slate-950 dark:bg-slate-950 border border-neutral-300 dark:border-gray-700 p-4 rounded-md">
+                    <!-- <div class="font-prata"> -->
+                    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700">The Baltimore Banner</span>
+                    <span class="whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-sm neutral-300 font-prata">Nov. 2023</span>
+                    <h4 class="text-lg font-medium mb-2 text-gray-100"><a href="https://www.thebaltimorebanner.com/community/criminal-justice/frankford-car-thefts-baltimore-LR5XVV7LSVAPFO6HM2HSXA2L2A/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 font-prata">Car theft rates have tripled in Baltimore. We visited the hardest-hit neighborhood.</a></h4>
+                    <p class="text-neutral-300 dark:text-gray-300 mb-4 leading-relaxed">An investigation into Baltimore's 2023 car theft crisis. The series involved a mix of public records reporting, data analysis and community engagement.</p>
+                </article>
+                <article class="bg-slate-950 dark:bg-slate-950 border border-neutral-300 dark:border-gray-700 p-4 rounded-md">
+                    <span class="whitespace-nowrap rounded-full bg-black px-2.5 py-0.5 text-sm text-white font-prata">The Washington Post</span>
+                    <span class="whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-sm neutral-300 font-prata">Sept. 2023</span>
+                    <h4 class="text-lg font-medium mb-2 text-gray-100 font-prata"><a href="https://www.washingtonpost.com/politics/2023/09/18/congress-security-spending-violence-threats/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300">Lawmakers are spending way more to keep themselves safe. Is it enough?</a></h4>
+                    <p class="text-neutral-300 dark:text-gray-300 mb-4 leading-relaxed">Using a mix of data sources, I did this deep dive into the changing rules and trends around legislative security.</p>
+                </article>
+                <article class="bg-slate-950 dark:bg-slate-950 border border-neutral-300 dark:border-gray-700 p-4 rounded-md">
+                    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700">The Baltimore Banner</span>
+                    <span class="whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-sm neutral-300 font-prata">May 2024</span>
+                    <h4 class="text-lg font-medium mb-2 text-gray-100 font-prata"><a href="https://www.thebaltimorebanner.com/data/baltimore-mayor-scott-dixon-race-neighborhood-3HHLH7LCWJEGVDXEAI3IPVQKUY/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300">Banner analysis: Margin in white neighborhoods powered Scott to victory</a></h4>
+                    <p class="text-neutral-300 dark:text-gray-300 mb-4 leading-relaxed">My 2024 Primary Election Day coverage used linear interpolation to explore some of the race and class dynamics of the Baltimore Mayoral race.</p>
+                </article>
+                <article class="bg-slate-950 dark:bg-slate-950 border border-neutral-300 dark:border-gray-700 p-4 rounded-md">
+                    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 font-prata">The Baltimore Banner</span>
+                    <span class="whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-sm neutral-300 font-prata">Oct. 2023</span>
+                    <h4 class="text-lg font-medium mb-2 text-gray-100 font-prata"><a href="https://www.thebaltimorebanner.com/sports/orioles-mlb/baltimore-orioles-mlb-clutch-hitting-playoffs-UKA4XUYH75DOHDRUVFWNLRY4H4/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300">The 2023 O’s were historically clutch. Will it last in October?</a></h4>
+                    <p class="text-neutral-300 dark:text-gray-300 mb-4 leading-relaxed">It did not last.</p>
+                </article>
+                <article class="bg-slate-950 dark:bg-slate-950 border border-neutral-300 dark:border-gray-700 p-4 rounded-md">
+                    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 font-prata">The Baltimore Banner</span>
+                    <span class="whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-sm neutral-300 font-prata">July 2024</span>
+                    <h4 class="text-lg font-medium mb-2 text-gray-100 font-prata"><a href="https://www.thebaltimorebanner.com/sports/maryland-athletes-summer-olympics-WWT3VVN5EJDDHHU6YDOLRQ6YA4/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300">Why does Maryland dominate at the Olympics? Look at the bank accounts.</a></h4>
+                    <p class="text-neutral-300 dark:text-gray-300 mb-4 leading-relaxed"><a href="https://github.com/invisibae/maryland_olympians" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300">I found my way into NBC's hidden API </a>containing every Olympian and the entire Olympic schedule. I scraped the data and used to in combination with U.S Census data to tell a story about why Maryland is so good at producing Olympians.</p>
+                </article>
+                <article class="bg-slate-950 dark:bg-slate-950 border border-neutral-300 dark:border-gray-700 p-4 rounded-md">
+                    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 font-prata">The Baltimore Banner</span>
+                    <span class="whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-sm neutral-300 font-prata">Feb. 2024</span>
+                    <h4 class="text-lg font-medium mb-2 text-gray-100 font-prata"><a href="https://www.thebaltimorebanner.com/community/criminal-justice/ghost-gun-data-baltimore-maryland-Y3VI4BRS7ZE5BI3IRXRRTA3EHI/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300">1 in 5 guns on Baltimore’s streets don’t have serial numbers. That’s a problem.</a></h4>
+                    <p class="text-neutral-300 dark:text-gray-300 mb-4 leading-relaxed">My colleague Lee Sanderlin and I were the first reporters to examine the Baltimore Police's gun recovery records. What we saw shocked us.</p>
+                </article>
+                <article class="bg-slate-950 dark:bg-slate-950 border border-neutral-300 dark:border-gray-700 p-4 rounded-md">
+                    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 font-prata">The Baltimore Banner</span>
+                    <span class="whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-sm neutral-300 font-prata">April 2024</span>
+                    <h4 class="text-lg font-medium mb-2 text-gray-100 font-prata"><a href="https://www.thebaltimorebanner.com/economy/growth-development/brandon-chasen-baltimore-developer-5ZGDKIYQ7NHLFEAOU3GWVMHYB4/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300">Baltimore’s flashiest developer wanted to expand nationally. Now he’s rethinking everything</a></h4>
+                    <p class="text-neutral-300 dark:text-gray-300 mb-4 leading-relaxed">That time I investigated my landlord.</p>
+                </article>
+                <article class="bg-slate-950 dark:bg-slate-950 border border-neutral-300 dark:border-gray-700 p-4 rounded-md">
+                    <span class="whitespace-nowrap rounded-full bg-yellow-400 px-2.5 py-0.5 text-sm text-black font-prata">The Texas Tribune</span>
+                    <span class="whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-sm neutral-300 font-prata">March 2024</span>
+                    <h4 class="text-lg font-medium mb-2 text-gray-100 font-prata"><a href="https://www.texastribune.org/2024/03/29/exas-disasters-domestic-violence-abuse/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300">In Texas, natural disasters increase domestic violence risks</a></h4>
+                    <p class="text-neutral-300 dark:text-gray-300 mb-4 leading-relaxed">This investigation, a partnership between the Texas Tribune, Howard Center for Investigative Journalism and the Fuller Project, explores the link between increasingly common extreme weather events, and trouble for the systems that support domestic violence survivors.</p>
+                </article>
+                <article class="bg-slate-950 dark:bg-slate-950 border border-neutral-300 dark:border-gray-700 p-4 rounded-md">
+                    <span class="whitespace-nowrap rounded-full bg-gray-900 px-2.5 py-0.5 text-sm text-current font-prata">ProPublica</span>
+                    <span class="whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-sm neutral-300 font-prata">Dec. 2021</span>
+                    <h4 class="text-lg font-medium mb-2 text-gray-100 font-prata"><a href="https://www.propublica.org/article/he-was-filming-on-his-phone-then-a-deputy-attacked-him-and-charged-him-with-resisting-arrest" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300">He Was Filming on His Phone. Then a Deputy Attacked Him and Charged Him With Resisting Arrest.</a></h4>
+                    <p class="text-neutral-300 dark:text-gray-300 mb-4 leading-relaxed">My first big journalism project. I was exposed to police data for the first time in this investigation into the Jefferson Parish, LA Police Department's use of so-called "cover charges". </p>
+                </article>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+        <div class="container mx-auto px-4 flex justify-center items-center">
+            <p class="text-gray-300 dark:text-neutral-300">© 2024 Greg Morton. All rights reserved.</p>
+        </div>
+
+</body>
+</html>
